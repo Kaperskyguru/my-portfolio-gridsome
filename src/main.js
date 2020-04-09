@@ -2,22 +2,19 @@
 // The Client API can be used here. Learn more: gridsome.org/docs/client-api
 
 import DefaultLayout from "~/layouts/Default.vue";
-// import "~/assets/open-iconic-bootstrap.min.css";
-// import "~/assets/animate.css";
-// import "~/assets/owl.carousel.min.css";
-// import "~/assets/owl.theme.default.min.css";
-// import "~/assets/magnific-popup.css";
-// import "~/assets/aos.css";
-
-// import "~/assets/ionicons.min.css";
 import "~/assets/flaticon.css";
-// import "~/assets/icomoon.css";
 
 import "~/assets/style.css";
 
 export default function(Vue, { router, head, isClient }) {
   // Set default layout as a global component
   Vue.component("Layout", DefaultLayout);
+
+  head.bodyAttrs = {
+    "data-spy": "scroll",
+    "data-target": ".site-navbar-target",
+    "data-offset": "300",
+  };
 
   head.link.push({
     rel: "stylesheet",
@@ -76,4 +73,18 @@ export default function(Vue, { router, head, isClient }) {
     rel: "stylesheet",
     href: "https://cdn.jsdelivr.net/npm/icomoon@1.0.0/style.css",
   });
+
+  head.script.push({ src: "/js/jquery.min.js", body: true });
+  head.script.push({ src: "js/jquery-migrate-3.0.1.min.js" });
+  head.script.push({ src: "/js/popper.min.js", body: true });
+  head.script.push({ src: "/js/bootstrap.min.js", body: true });
+  head.script.push({ src: "/js/jquery.easing.1.3.js", body: true });
+  head.script.push({ src: "/js/jquery.waypoints.min.js", body: true });
+  head.script.push({ src: "/js/jquery.stellar.min.js", body: true });
+  head.script.push({ src: "/js/owl.carousel.min.js", body: true });
+  head.script.push({ src: "/js/jquery.magnific-popup.min.js", body: true });
+  head.script.push({ src: "/js/aos.js", body: true });
+  head.script.push({ src: "/js/jquery.animateNumber.min.js", body: true });
+  head.script.push({ src: "/js/scrollax.min.js", body: true });
+  head.script.push({ src: "/js/main.js", body: true });
 }
