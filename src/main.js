@@ -74,16 +74,26 @@ export default function(Vue, { router, head, isClient }) {
     href: "https://cdn.jsdelivr.net/npm/icomoon@1.0.0/style.css",
   });
 
-  head.script.push({ src: "/js/jquery.min.js", body: true });
+  head.script.push({
+    src: "https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js",
+    body: true,
+  });
   head.script.push({ src: "js/jquery-migrate-3.0.1.min.js" });
   head.script.push({ src: "/js/popper.min.js", body: true });
   head.script.push({ src: "/js/bootstrap.min.js", body: true });
   head.script.push({ src: "/js/jquery.easing.1.3.js", body: true });
-  head.script.push({ src: "/js/jquery.waypoints.min.js", body: true });
+  // head.script.push({
+  //   src:
+  //     "https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/noframework.waypoints.min.js",
+  //   body: true,
+  // });
   head.script.push({ src: "/js/jquery.stellar.min.js", body: true });
   head.script.push({ src: "/js/owl.carousel.min.js", body: true });
   head.script.push({ src: "/js/jquery.magnific-popup.min.js", body: true });
-  head.script.push({ src: "/js/aos.js", body: true });
+  head.script.push({
+    src: "https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js",
+    body: true,
+  });
   head.script.push({ src: "/js/jquery.animateNumber.min.js", body: true });
   head.script.push({ src: "/js/scrollax.min.js", body: true });
   head.script.push({ src: "/js/main.js", body: true });

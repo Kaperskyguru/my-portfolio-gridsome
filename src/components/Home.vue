@@ -15,7 +15,7 @@
               <div class="overlay"></div>
             </div>
             <div
-              class="one-forth d-flex  align-items-center ftco-animate"
+              class="one-forth d-flex  align-items-center fto-animate"
               data-scrollax=" properties: { translateY: '70%' }"
             >
               <div class="text">
@@ -48,7 +48,7 @@
               <div class="overlay"></div>
             </div>
             <div
-              class="one-forth d-flex align-items-center ftco-animate"
+              class="one-forth d-flex align-items-center fto-animate"
               data-scrollax=" properties: { translateY: '70%' }"
             >
               <div class="text">

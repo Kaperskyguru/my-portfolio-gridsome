@@ -1,41 +1,39 @@
 <template>
-  <div class="layout container">
-    <header class="header">
-      <nav
-        class="navbar navbar-expand-lg navbar-dark ftco_navbar ftco-navbar-light site-navbar-target"
-        id="ftco-navbar"
-      >
-        <div class="container">
-          <g-link class="navbar-brand" to="/">{{
-            $static.metadata.siteName
-          }}</g-link>
-          <button
-            class="navbar-toggler js-fh5co-nav-toggle fh5co-nav-toggle"
-            type="button"
-            data-toggle="collapse"
-            data-target="#ftco-nav"
-            aria-controls="ftco-nav"
-            aria-expanded="false"
-            aria-label="Toggle navigation"
-          >
-            <span class="oi oi-menu"></span>
-          </button>
-          <div class="collapse navbar-collapse" id="ftco-nav">
-            <ul class="navbar-nav nav ml-auto">
-              <li class="nav-item">
-                <g-link class="nav-link" to="/">About</g-link>
-              </li>
-              <li class="nav-item">
-                <g-link class="nav-link" to="/about">Work</g-link>
-              </li>
-              <li class="nav-item">
-                <g-link class="nav-link" to="/">Engagement</g-link>
-              </li>
-            </ul>
-          </div>
+  <div>
+    <nav
+      class="navbar navbar-expand-lg navbar-dark ftco_navbar ftco-navbar-light site-navbar-target"
+      id="ftco-navbar"
+    >
+      <div class="container">
+        <g-link class="navbar-brand" to="/">{{
+          $static.metadata.siteName
+        }}</g-link>
+        <button
+          class="navbar-toggler js-fh5co-nav-toggle fh5co-nav-toggle"
+          type="button"
+          data-toggle="collapse"
+          data-target="#ftco-nav"
+          aria-controls="ftco-nav"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="oi oi-menu"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="ftco-nav">
+          <ul class="navbar-nav nav ml-auto">
+            <li class="nav-item">
+              <g-link class="nav-link" to="/">About</g-link>
+            </li>
+            <li class="nav-item">
+              <g-link class="nav-link" to="/about">Work</g-link>
+            </li>
+            <li class="nav-item">
+              <g-link class="nav-link" to="/">Engagement</g-link>
+            </li>
+          </ul>
         </div>
-      </nav>
-    </header>
+      </div>
+    </nav>
     <slot />
   </div>
 </template>
@@ -64,7 +62,7 @@ query {
   padding-right: 20px;
 } */
 
-.header {
+/* .header {
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -74,5 +72,5 @@ query {
 
 .nav__link {
   margin-left: 20px;
-}
+} */
 </style>
