@@ -5,9 +5,9 @@
       id="ftco-navbar"
     >
       <div class="container">
-        <g-link class="navbar-brand" to="/">{{
-          $static.metadata.siteName
-        }}</g-link>
+        <g-link class="navbar-brand" to="/">
+          <g-image src="/images/logo.png"
+        /></g-link>
         <button
           class="navbar-toggler js-fh5co-nav-toggle fh5co-nav-toggle"
           type="button"
@@ -25,7 +25,7 @@
               <g-link class="nav-link" to="/">About</g-link>
             </li>
             <li class="nav-item">
-              <g-link class="nav-link" to="/about">Work</g-link>
+              <g-link class="nav-link" to="/about">Blog</g-link>
             </li>
             <li class="nav-item">
               <g-link class="nav-link" to="/">Engagement</g-link>
@@ -55,12 +55,9 @@ query {
   line-height: 1.5;
 } */
 
-/* .layout {
-  max-width: 760px;
-  margin: 0 auto;
-  padding-left: 20px;
-  padding-right: 20px;
-} */
+.layout {
+  height: 100vh;
+}
 
 /* .header {
   display: flex;
